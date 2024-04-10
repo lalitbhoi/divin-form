@@ -76,7 +76,13 @@ const Form = () => {
         </div>
         <div className='mb-3'>
           <label className='w-25'>Place of Birth:</label>
-          <input type="text" name="placeOfBirth" value={formData.placeOfBirth} onChange={handleInputChange} />
+          <select name="countryCode"  value={formData.countryCode} onChange={handleInputChange}>
+            <option value="+1">Surat</option>
+            <option value="+44">Rajkot</option>
+            <option value="+44">Ahemdabad</option>
+            <option value="+44">Rajkot</option>
+            {/* Add more country codes as needed */}
+          </select>
         </div>
 
         
